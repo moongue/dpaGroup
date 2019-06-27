@@ -1,0 +1,37 @@
+.guarantees {
+  .list-guarantees {
+    margin-top: 10px;
+    .list-item {
+      display: flex;
+      margin-top: 10%;
+      .block-img {
+        max-width: 95px;
+        width: 100%;
+        position: relative;
+        &:before {
+          content: '';
+          opacity: .3;
+          background-image: linear-gradient(to bottom, $seaweed, rgba(22, 202, 86, 0));
+          width: 56px;
+          height: 45px;
+          position: absolute;
+          bottom: -9px;
+          right: 0;
+        }
+        &.circle {
+          &:before {
+            border-radius: 50%;
+            bottom: 5px;
+          }
+        }
+      }
+      p {
+        padding-left: 40px;
+        color: $black;
+        font-size: 18px;
+        font-weight: 500;
+        max-width: 312px;
+      }
+    }
+  }
+}

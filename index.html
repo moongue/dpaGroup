@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="plugins/pagePiling/jquery.pagepiling.min.js"></script>
+    <script src="plugins/mask/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="plugins/pagePiling/jquery.pagepiling.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PDA Group</title>
+</head>
+<body>
+<div class="container-fluid vh-100">
+    <div class="row non-offset">
+        <div class="col-3 no-gutters offset-p-none">
+            <aside class="menu">
+                <div class="fixed">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="navigation" id="menu">
+                            <li data-menuanchor="home" class="active"><a href="#home">Главная</a></li>
+                            <li data-menuanchor="services"><a href="#services">Услуги</a></li>
+                            <li data-menuanchor="guarantees"><a href="#guarantees">Наши Гарантии</a></li>
+                            <li data-menuanchor="works"><a href="#works">Как мы работаем</a></li>
+                            <li data-menuanchor="dpa"><a href="#dpa">Кто мы DPA</a></li>
+                            <li data-menuanchor="reviews"><a href="#reviews">Отзывы</a></li>
+                            <li data-menuanchor="contacts"><a href="#contacts">Контакты</a></li>
+
+                        </ul>
+                    </nav>
+                    <div class="wrap">
+                        <div class="tel">
+                            <p>+7 (499) 688 83 18</p>
+                        </div>
+                        <div class="social-network">
+                            <div class="network">
+                                <a href="#" class="telegram"><img src="images/telegram.svg" alt="Telegram"></a>
+                            </div>
+                            <div class="network">
+                                <a href="#" class="whatsapp"><img src="images/whatsapp.svg" alt="Whatsapp"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="col-9 offset-p-none no-gutters">
+            <div id="pagepiling">
+                <section class="home pattern vh-100 section" id="section1">
+                    <div class="wrapper-content">
+                        <div class="content">
+                            <div class="left">
+                                <div class="title">
+                                    <span class="t-green">Поиск и сбор</span><br>
+                                    информации о физических и юридических лицах
+                                </div>
+                                <form action="test" class="form">
+                                    <div class="wrap-input">
+                                        <input type="text" class="input-styles phone_mask"
+                                               placeholder="+7 ( ■ ■ ■ ) ■ ■ ■  ■ ■  ■ ■">
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input type="text" class="input-styles" placeholder="Имя">
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input type="text" class="input-styles" placeholder="Город">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="right">
+                                <p class="time">
+                                    24<span class="t-green">/</span>7
+                                </p>
+                                <div class="btn">
+                                    <a href="#" class="btn-styles">Получить консультацию</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-img">
+                        <img src="images/home-img.jpg" alt="">
+                    </div>
+                </section>
+                <section class="services pp-scrollable pattern vh-100 section section" id="section2">
+                    <div class="wrapper-content">
+                        <div class="subtitle">
+                            Наши услуги
+                        </div>
+                        <div class="tabs">
+                            <div class="top">
+                                <ul class="tabs__caption">
+                                    <li class="active">Физические лица</li>
+                                    <li>Юридические лица</li>
+                                </ul>
+                                <div class="btn">
+                                    <a href="#" class="btn-styles">Получить консультацию</a>
+                                </div>
+                            </div>
+                            <div class="tabs__content active">
+                                <div class="row non-offset">
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Поиск движемого<br>
+                                                    и недвижемого имущества:
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price rub">
+                                                1000
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Информация о финансовой<br>
+                                                    деятельности компании:
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price rub">
+                                                1500
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 no-gutters offset-p-none">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Финансовый мониторинг<br>
+                                                    компаний
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price rub">
+                                                15 000
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Бизнес отчет<br>
+                                                    о юридическом лице
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price rub">
+                                                10 500
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Поиск счетов и установка наличия<br> денежных средств на счетах
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price rub">
+                                                1000
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Внешнеэкономическая<br>
+                                                    деятельность
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price rub">
+                                                15 500
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Консультация по работам с Гос<br>
+                                                    Ведомствами и Правоохран органами
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price">
+                                                Индивидуально
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Взыскание<br>
+                                                    задолжностей.
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price">
+                                                Индивидуально
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+
+                                    </div>
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="download">
+                                            <p>Скачать полный<br>
+                                                прайс-лист</p>
+                                            <a href="#"><img src="images/pdf.svg" alt="pdf"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__content">
+                                <div class="row non-offset">
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Поиск движемого<br>
+                                                    и недвижемого имущества:
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price rub">
+                                                1000
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Информация о финансовой<br>
+                                                    деятельности компании:
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price rub">
+                                                1500
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 no-gutters offset-p-none">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Финансовый мониторинг<br>
+                                                    компаний
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price rub">
+                                                15 000
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Бизнес отчет<br>
+                                                    о юридическом лице
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price rub">
+                                                10 500
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Поиск счетов и установка наличия<br> денежных средств на счетах
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price rub">
+                                                1000
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Внешнеэкономическая<br>
+                                                    деятельность
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price rub">
+                                                15 500
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Консультация по работам с Гос<br>
+                                                    Ведомствами и Правоохран органами
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price">
+                                                Индивидуально
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="card">
+                                            <div class="top-card">
+                                                <p class="descr">
+                                                    Взыскание<br>
+                                                    задолжностей.
+                                                </p>
+                                                <a href="#" class="style-plus"></a>
+                                            </div>
+                                            <div class="price">
+                                                Индивидуально
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+
+                                    </div>
+                                    <div class="col-6 offset-p-none no-gutters">
+                                        <div class="download">
+                                            <p>Скачать полный<br>
+                                                прайс-лист</p>
+                                            <a href="#"><img src="images/pdf.svg" alt="pdf"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="guarantees pattern vh-100 section" id="section4">
+                    <div class="wrapper-content">
+                        <div class="top-s">
+                            <div class="subtitle">
+                                Наши гарантии
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="btn-styles">Получить консультанцию</a>
+                            </div>
+                        </div>
+                        <div class="list-guarantees">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="list-item">
+                                        <div class="block-img">
+                                            <img src="images/lock.svg" alt="">
+                                        </div>
+                                        <p>Гарантия конфиденциальности</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="list-item">
+                                        <div class="block-img">
+                                            <img src="images/paper.svg" alt="">
+                                        </div>
+                                        <p>Все действия проводятся в рамках закона рф</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="list-item">
+                                        <div class="block-img circle">
+                                            <img src="images/alert.svg" alt="">
+                                        </div>
+                                        <p>Гарантия подлинной информации</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="list-item">
+                                        <div class="block-img circle">
+                                            <img src="images/time.svg" alt="">
+                                        </div>
+                                        <p>Короткие сроки исполнения услуги около 30% досрочно</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="list-item">
+                                        <div class="block-img circle">
+                                            <img src="images/world.svg" alt="">
+                                        </div>
+                                        <p>Мы работаем по всей россии снг и зарубежом</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="list-item">
+                                        <div class="block-img circle">
+                                            <img src="images/defence.svg" alt="">
+                                        </div>
+                                        <p>Опыт работы в правоохранительных органах более 20 лет</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="works pattern vh-100 section" id="section3">
+                    <div class="wrapper-content">
+                        <div class="top-s">
+                            <div class="subtitle">
+                                Как мы работаем
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="btn-styles">Получить консультанцию</a>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="col-4">
+                                    <p class="t-medium fz-18">Мы разработали схему сотрудничества, удобную для любого
+                                        заказчика. </p>
+                                </div>
+                                <div class="col-8">
+                                    <p class="t-grey">Она предусматривает как личную встречу, так и дистанционную работу
+                                        (для тех клиентов,
+                                        которые не желают или не могут встретиться очно). Прежде всего проводится
+                                        консультация
+                                        по телефону, после чего (при личной встрече или дистанционно) наши специалисты
+                                        формируют
+                                        задачу, в соответствии с которой заказчик вносит предоплату. После того, как
+                                        заказ
+                                        выполнен, мы предоставляем ему отчёт и результаты, а он проводит окончательный
+                                        расчёт.
+                                        Более подробные данные об этапах сотрудничества представлены в нашей таблице
+                                        ниже:</p>
+                                </div>
+                            </div>
+                            <div class="steps">
+                                <div class="enumeration">
+                                    <div class="step"><p>01</p></div>
+                                    <div class="task"><p>Первичная консультация</p></div>
+                                </div>
+                                <div class="enumeration">
+                                    <div class="step"><p>02</p></div>
+                                    <div class="task"><p>Формирование потребности </p></div>
+                                </div>
+                                <div class="enumeration">
+                                    <div class="step"><p>03</p></div>
+                                    <div class="task"><p>Выполнение задачи</p></div>
+                                </div>
+                                <div class="enumeration">
+                                    <div class="step"><p>04</p></div>
+                                    <div class="task"><p>Предоставление отчета</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

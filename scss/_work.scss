@@ -1,0 +1,54 @@
+.works {
+
+  .info {
+    padding: 44px 0;
+    background: $body-bg;
+  }
+  .steps {
+    display: flex;
+    margin-top: 80px;
+    .enumeration {
+      &:first-child {
+        .task {
+          padding-left: 0;
+          margin-left: 60px;
+        }
+      }
+    }
+    .step {
+      p {
+        max-width: 130px;
+        width: 100%;
+        font-size: 92px;
+        color: $seaweed;
+        font-weight: 500;
+        position: relative;
+        &:before {
+          content: '';
+          width: 21px;
+          height: 21px;
+          border-radius: 50%;
+          background: $body-bg;
+          border: 1px dashed $warm-grey;
+          position: absolute;
+          bottom: -19px;
+          left: calc((100% - 21px) / 2);
+        }
+      }
+    }
+    .task {
+      padding-left: 60px;
+      border-top: 1px dashed $warm-grey;
+      margin-top: 9px;
+      padding-top: 24px;
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        max-width: 175px;
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
