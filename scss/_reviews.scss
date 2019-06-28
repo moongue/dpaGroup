@@ -1,0 +1,83 @@
+.reviews {
+
+  .subtitle {
+    max-width: 325px;
+  }
+
+  .wrap-comments {
+    padding-bottom: 50px;
+
+    .bx-wrapper {
+      max-width: 530px !important;
+      width: 100%;
+      margin: 0 auto;
+      .bx-pager {
+        bottom: -50px;
+      }
+    }
+
+    .bx-viewport {
+      max-width: 530px;
+      width: 100%;
+      overflow: inherit !important;
+    }
+
+    .bx-pager {
+      font-size: 80px;
+      color: $black;
+      font-weight: 600;
+    }
+  }
+
+  .comments-block {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    .name {
+      font-size: 18px;
+      color: $black;
+      font-weight: 500;
+    }
+
+    .comment {
+      color: $greyish-brown-two;
+      font-size: 16px;
+      line-height: 1.44;
+      margin-top: 23px;
+      max-width: 386px;
+    }
+
+    .slider-comments {
+      height: 100%;
+      border: 8px solid $bg-white;
+      background: $body-bg;
+      box-shadow: 0 7px 33px 0 rgba(0, 0, 0, 0.06);
+      &:before {
+        content: '';
+        width: 94%;
+        position: absolute;
+        height: 20px;
+        left: 3%;
+        bottom: -20px;
+        background: $bg-white;
+        z-index: -1;
+        box-shadow: 0 7px 33px 0 rgba(0, 0, 0, 0.06);
+      }
+      &:after {
+        content: '';
+        width: 88%;
+        height: 20px;
+        position: absolute;
+        bottom: -32px;
+        left: 6%;
+        background: $bg-white;
+        z-index: -2;
+        box-shadow: 0 7px 33px 0 rgba(0, 0, 0, 0.06);
+      }
+
+      .slide {
+        padding: 63px 71px;
+
+      }
+    }
+  }
+}
