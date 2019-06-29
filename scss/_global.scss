@@ -12,6 +12,16 @@ body {
   }
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 999999999;
+}
+
 //.z-auto {
 //  z-index: auto !important;
 //}
@@ -233,9 +243,10 @@ option:focus {
   }
 }
 
+
 //Popups
 .popup-services {
-  position: absolute;
+  position: fixed;
   transform: translateX(100%);
   right: 0;
   top: 0;
@@ -246,6 +257,38 @@ option:focus {
   transition: all .3s ease-in-out;
   filter: blur(4x);
   height: 100%;
+
+  .close {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 23px;
+    left: 92%;
+    cursor: pointer;
+    &:before {
+      content: '';
+      width: 2px;
+      height: 18px;
+      background: $black;
+      transform-origin: center;
+      transform: rotate(45deg);
+      position: absolute;
+      left: 8px;
+      top: 8px;
+    }
+
+    &:after {
+      content: '';
+      width: 2px;
+      height: 18px;
+      background: $black;
+      transform-origin: center;
+      transform: rotate(-45deg);
+      position: absolute;
+      left: 8px;
+      top: 8px;
+    }
+  }
 
   .scroll {
     height: 100%;
@@ -263,7 +306,7 @@ option:focus {
     filter: blur(0);
   }
 
-  .titlte-popup {
+  .title-popup {
     padding: 30px 46px;
     font-size: 26px;
     font-weight: 500;
@@ -330,6 +373,7 @@ option:focus {
       font-size: 16px;
       color: $greyish-brown;
       line-height: 1.44;
+
       &:last-child {
         padding-bottom: 70px;
       }

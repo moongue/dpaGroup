@@ -112,35 +112,37 @@
 
     &:before {
       content: '';
-      width: 279px;
-      height: 254px;
+      width: 94%;
+      height: 100%;
       background: $seaweed;
       opacity: .75;
       position: absolute;
-      top: 14px;
-      left: 13px;
+      top: 8px;
+      left: 3%;
       z-index: -1;
     }
 
     &:after {
       content: '';
-      width: 257px;
-      height: 240px;
+      width: 86%;
+      height: 100%;
       background: $seaweed;
       opacity: .75;
       position: absolute;
-      top: 35px;
-      left: 24px;
+      top: 16px;
+      left: 7%;
       z-index: -2;
     }
 
     .slide {
       max-width: 305px;
       width: 100%;
-      padding: 35px 57px;
+      padding: 35px 0;
     }
 
     p {
+      max-width: 200px;
+      margin: 0 auto;
       font-size: 16px;
     }
 

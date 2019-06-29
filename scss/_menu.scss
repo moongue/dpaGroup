@@ -22,7 +22,65 @@
     }
   }
 
+//Burger
+  .mobile-menu-toggle {
+    display: none;
+    z-index: 877;
+    margin-top: 16px;
+    position: relative;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .5s;
+    text-align: left;
 
+    div,
+    div:before,
+    div:after {
+      background: $seaweed;
+      position: absolute;
+      height: 4px;
+      width: 40px;
+      transition: all .5s;
+      border-radius: 30px;
+    }
+
+    div:first-child {
+      top: 0;
+    }
+    div:nth-child(2) {
+      top: 10px;
+    }
+    div:nth-child(3) {
+      top: 20px;
+    }
+    &.active {
+      div {
+        background: $black;
+      }
+      div:first-child {
+        top: 8%;
+        left: 5%;
+        width: 50%;
+        transform: rotate(45deg);
+        transition: width .15s, top .15s .15s, left .15s .15s, transform .15s .15s;
+      }
+      div:nth-child(2) {
+        transform: rotate(-45deg);
+        transition: transform .15s .15s;
+      }
+      div:nth-child(3) {
+        width: 50%;
+        right: 7%;
+        top: 45%;
+        transform: rotate(45deg);
+        transition: width .15s, top .15s .15s, right .15s .15s, transform .15s .15s;
+      }
+    }
+
+  }
+  // End burger
 
   .logo {
     img {
