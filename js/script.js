@@ -126,7 +126,6 @@ $(document).ready(function () {
         sliderGerb();
         sliderComments();
         chooseServices();
-        smoothJump();
     });
     $(window).load(function () {
         $(".loader").fadeOut("slow");
@@ -140,5 +139,6 @@ $(document).ready(function () {
     }
     if($(window).width() < 992) {
         mobileMenuToggle();
+        smoothJump();
     }
 });

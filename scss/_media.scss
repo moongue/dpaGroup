@@ -13,6 +13,25 @@
   }
 }
 
+@media #{$header-fix} {
+  .contacts {
+    .title {
+      font-size: 44px;
+    }
+    .time-work {
+      .time {
+        font-size: 66px;
+      }
+    }
+    .middle-wrap {
+      padding: 35px 0;
+    }
+    .bottom-wrap {
+      font-size: 32px;
+    }
+  }
+}
+
 @media #{$lg} {
   html {
     overflow: auto !important;
@@ -84,6 +103,15 @@
 }
 
 @media #{$md} {
+  .subtitle {
+    max-width: 100%;
+  }
+  section {
+    margin-top: 60px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
   .menu {
     position: fixed;
     top: -1px;
@@ -131,11 +159,10 @@
         li {
           padding: 0 15px;
           width: 100%;
-          text-align: right;
+          text-align: left;
 
           &:before {
-            right: inherit;
-            left: 15px;
+            right: 15px;
           }
 
           &:last-child {
@@ -329,6 +356,12 @@
   .title {
     font-size: 26px;
   }
+  section {
+    margin-top: 60px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
   .top-s {
     flex-direction: column;
     align-items: flex-start;
@@ -338,6 +371,7 @@
     }
   }
   .menu {
+
     nav {
       right: 6px;
       top: 85px;
@@ -378,7 +412,7 @@
     }
 
     .tel {
-      font-size: 12px;
+      font-size: 17px;
     }
   }
   .home {
@@ -398,6 +432,9 @@
     }
   }
   .popup-services {
+    .close {
+      top: 0;
+    }
     .title-popup {
       padding: 15px;
     }
@@ -408,6 +445,14 @@
 
     .order {
       padding: 24px 15px;
+      .btn {
+        .btn-styles {
+          padding: 14px;
+        }
+      }
+      .price {
+        font-size: 18px;
+      }
     }
   }
   .services {
@@ -432,6 +477,7 @@
       }
     }
   }
+
   .guarantees {
     .list-guarantees {
       .list-item {
@@ -540,6 +586,15 @@
     }
   }
   .reviews {
+    .wrap-comments {
+      .bx-wrapper {
+        .bx-pager {
+          font-size: 48px;
+          bottom: -38px;
+
+        }
+      }
+    }
     .comments-block {
       margin-top: 25px;
       margin-bottom: 25px;
@@ -581,5 +636,10 @@
       }
     }
   }
+}
 
+@media #{$xss} {
+  .menu .tel {
+    font-size: 14px;
+  }
 }

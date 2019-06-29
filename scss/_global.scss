@@ -188,59 +188,8 @@ option:focus {
   display: none !important;
 }
 
-//.pp-tooltip {
-//  color: $white;
-//  text-transform: uppercase;
-//  font-size: 16px;
-//  background: $seaweed;
-//  padding: 12px;
-//  border-radius: 4px;
-//
-//  &:after {
-//    content: '';
-//    width: 0;
-//    height: 0;
-//    border-style: solid;
-//    border-width: 7px 0 7px 8px;
-//    border-color: transparent transparent transparent $seaweed;
-//    position: absolute;
-//    top: 4px;
-//    right: -7px;
-//
-//  }
-//}
-
-
 #pp-nav {
-  ul {
-    li {
-      a {
-        &.active {
-          span {
-            background: none;
-
-            &:before {
-              content: '';
-              width: 8px;
-              height: 8px;
-              border-radius: 50%;
-              background: $seaweed;
-              position: absolute;
-              left: calc((100% - 8px) / 2);
-              top: calc((100% - 8px) / 2);
-            }
-          }
-        }
-
-        span {
-          width: 16px;
-          height: 16px;
-          border-color: $seaweed !important;
-          border: 1px solid $seaweed;
-        }
-      }
-    }
-  }
+  display: none;
 }
 
 

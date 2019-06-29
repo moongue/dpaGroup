@@ -215,26 +215,8 @@ option:focus {
   display: none !important;
 }
 
-#pp-nav ul li a.active span {
-  background: none;
-}
-
-#pp-nav ul li a.active span:before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #16ca56;
-  position: absolute;
-  left: calc((100% - 8px) / 2);
-  top: calc((100% - 8px) / 2);
-}
-
-#pp-nav ul li a span {
-  width: 16px;
-  height: 16px;
-  border-color: #16ca56 !important;
-  border: 1px solid #16ca56;
+#pp-nav {
+  display: none;
 }
 
 .popup-services {
@@ -713,7 +695,7 @@ option:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .works .steps .enumeration:first-child .task {
@@ -1325,7 +1307,7 @@ option:focus {
 }
 
 .contacts .top-wrap {
-  padding-top: 134px;
+  padding-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1415,6 +1397,24 @@ option:focus {
   }
 }
 
+@media only screen and (max-width: 1281px) {
+  .contacts .title {
+    font-size: 44px;
+  }
+
+  .contacts .time-work .time {
+    font-size: 66px;
+  }
+
+  .contacts .middle-wrap {
+    padding: 35px 0;
+  }
+
+  .contacts .bottom-wrap {
+    font-size: 32px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   html {
     overflow: auto !important;
@@ -1483,6 +1483,18 @@ option:focus {
 }
 
 @media only screen and (max-width: 992px) {
+  .subtitle {
+    max-width: 100%;
+  }
+
+  section {
+    margin-top: 60px;
+  }
+
+  section:first-child {
+    margin-top: 0;
+  }
+
   .menu {
     position: fixed;
     top: -1px;
@@ -1538,12 +1550,11 @@ option:focus {
   .menu nav .navigation li {
     padding: 0 15px;
     width: 100%;
-    text-align: right;
+    text-align: left;
   }
 
   .menu nav .navigation li:before {
-    right: inherit;
-    left: 15px;
+    right: 15px;
   }
 
   .menu nav .navigation li:last-child {
@@ -1741,6 +1752,14 @@ option:focus {
     font-size: 26px;
   }
 
+  section {
+    margin-top: 60px;
+  }
+
+  section:first-child {
+    margin-top: 0;
+  }
+
   .top-s {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1791,7 +1810,7 @@ option:focus {
   }
 
   .menu .tel {
-    font-size: 12px;
+    font-size: 17px;
   }
 
   .home .block-img img {
@@ -1812,6 +1831,10 @@ option:focus {
     align-items: flex-start;
   }
 
+  .popup-services .close {
+    top: 0;
+  }
+
   .popup-services .title-popup {
     padding: 15px;
   }
@@ -1822,6 +1845,14 @@ option:focus {
 
   .popup-services .order {
     padding: 24px 15px;
+  }
+
+  .popup-services .order .btn .btn-styles {
+    padding: 14px;
+  }
+
+  .popup-services .order .price {
+    font-size: 18px;
   }
 
   .services {
@@ -1938,6 +1969,11 @@ option:focus {
     max-width: 100%;
   }
 
+  .reviews .wrap-comments .bx-wrapper .bx-pager {
+    font-size: 48px;
+    bottom: -38px;
+  }
+
   .reviews .comments-block {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -1982,6 +2018,12 @@ option:focus {
 
   .contacts .time-work .time {
     font-size: 54px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .menu .tel {
+    font-size: 14px;
   }
 }
 
