@@ -1298,6 +1298,11 @@ option:focus {
   font-size: 50px;
 }
 
+.contacts .top {
+  background: url(../images/bg-contacts.jpg) no-repeat #fff;
+  background-size: cover;
+}
+
 .contacts .middle {
   background: #16ca56;
 }

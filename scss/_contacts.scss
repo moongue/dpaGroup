@@ -4,7 +4,9 @@
     font-size: 50px;
   }
   .top {
-
+    background: url(../images/bg-contacts.jpg) no-repeat $white;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
   .middle {
     background: $seaweed;

@@ -35,7 +35,7 @@ $(document).ready(function () {
     function pagePiling() {
         $('#pagepiling').pagepiling({
             menu: '#menu',
-            anchors: ['home', 'services', 'guarantees', 'works', 'dpa', 'reviews', 'contacts'],
+            anchors: ['home', 'services', 'guarantees', 'works', 'about', 'reviews', 'contacts'],
             navigation: {
                 'position': 'right',
                 'tooltips': ['home', 'services', 'guarantees', 'works', 'dpa', 'reviews', 'contacts']
